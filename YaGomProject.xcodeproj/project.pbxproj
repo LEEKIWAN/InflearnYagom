@@ -100,24 +100,19 @@
 			children = (
 				833D2DDF21F884CB00FD597E /* AppDelegate.swift */,
 				833D2DF221F884E700FD597E /* Main.storyboard */,
-				833D2DF121F884E700FD597E /* WebViewController.swift */,
-				835E46FD21FA002500D1612A /* UpAndDownViewController.swift */,
-				835E46FF21FB3FA500D1612A /* ColorPickerViewController.swift */,
-				83A5DE4621FDD84500E67781 /* CompanionAnimalViewController.swift */,
-				83A5DE3E21FDCF5300E67781 /* DescriptionViewController.swift */,
-				83A5DE4021FDCF6100E67781 /* MakerViewController.swift */,
-				83FCE58E21FF22A700F13E1D /* LoginViewController.swift */,
-				83FCE59221FF24F800F13E1D /* InfoViewController.swift */,
 				833D2DE821F884CC00FD597E /* LaunchScreen.storyboard */,
 				833D2DEB21F884CC00FD597E /* Info.plist */,
+				83EC866C220D648D00B67200 /* WebView */,
+				83EC866B220D648000B67200 /* UpAndDown */,
+				83EC866A220D645D00B67200 /* Login */,
+				83EC8669220D643D00B67200 /* AnimalCompanion */,
+				83EC8667220D642600B67200 /* ColorPicker */,
 				83DE6FD62207120000B94CC9 /* Todo */,
 				83DE6FCD22032A8700B94CC9 /* DISC */,
 				83DE6FC52201CEBE00B94CC9 /* DISCTest.xcassets */,
 				833D2DE621F884CC00FD597E /* Assets.xcassets */,
 				835E470121FC238700D1612A /* Animals.xcassets */,
 				83A5DE4221FDD67800E67781 /* AnimalsJsonData.xcassets */,
-				83FCE59021FF24AD00F13E1D /* LoginInfo.swift */,
-				83A5DE4421FDD6E200E67781 /* AnimalInfo.swift */,
 			);
 			path = YaGomProject;
 			sourceTree = "<group>";
@@ -160,6 +155,51 @@
 				83DE6FDD22071DAB00B94CC9 /* Todo.swift */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		83EC8667220D642600B67200 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				835E46FF21FB3FA500D1612A /* ColorPickerViewController.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		83EC8669220D643D00B67200 /* AnimalCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				83A5DE3E21FDCF5300E67781 /* DescriptionViewController.swift */,
+				83A5DE4021FDCF6100E67781 /* MakerViewController.swift */,
+				83A5DE4621FDD84500E67781 /* CompanionAnimalViewController.swift */,
+				83A5DE4421FDD6E200E67781 /* AnimalInfo.swift */,
+			);
+			path = AnimalCompanion;
+			sourceTree = "<group>";
+		};
+		83EC866A220D645D00B67200 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83FCE59021FF24AD00F13E1D /* LoginInfo.swift */,
+				83FCE59221FF24F800F13E1D /* InfoViewController.swift */,
+				83FCE58E21FF22A700F13E1D /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		83EC866B220D648000B67200 /* UpAndDown */ = {
+			isa = PBXGroup;
+			children = (
+				835E46FD21FA002500D1612A /* UpAndDownViewController.swift */,
+			);
+			path = UpAndDown;
+			sourceTree = "<group>";
+		};
+		83EC866C220D648D00B67200 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				833D2DF121F884E700FD597E /* WebViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77F6X5R2CN;
+				DEVELOPMENT_TEAM = N352ULAZ9C;
 				INFOPLIST_FILE = YaGomProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77F6X5R2CN;
+				DEVELOPMENT_TEAM = N352ULAZ9C;
 				INFOPLIST_FILE = YaGomProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

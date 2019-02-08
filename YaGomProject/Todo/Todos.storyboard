@@ -54,11 +54,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Todo" id="zC7-DF-Xko">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="zSD-VX-XzV">
-                            <connections>
-                                <segue destination="nRB-9M-hAd" kind="presentation" id="BTt-ko-Dm5"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="done" systemItem="add" id="zSD-VX-XzV">
+                                <connections>
+                                    <segue destination="nRB-9M-hAd" kind="presentation" id="BTt-ko-Dm5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Close" id="cLZ-hN-u1d">
+                                <connections>
+                                    <action selector="onCloseTouched:" destination="vrh-WS-RNr" id="TZ8-7t-fDb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48n-KW-dGu" userLabel="First Responder" sceneMemberID="firstResponder"/>

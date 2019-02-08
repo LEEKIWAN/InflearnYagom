@@ -38,4 +38,7 @@ class DISCMainViewController: UIViewController {
         
     }
 
+    @IBAction func onCloseTouched(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -59,4 +59,7 @@ class CompanionAnimalViewController: UIViewController {
         
         nextViewController.animalInfo = info
     }
+    @IBAction func onCloseTouched(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

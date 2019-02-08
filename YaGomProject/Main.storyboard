@@ -159,13 +159,25 @@
                                     <segue destination="SUp-8S-frp" kind="show" id="u4w-iw-Xwy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qh-Fc-ShM">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lJ5-rI-cba">
                                 <rect key="frame" x="20" y="384" width="280" height="30"/>
-                                <state key="normal" title="만든이"/>
-                                <connections>
-                                    <segue destination="DNw-ja-HMo" kind="presentation" id="Ql4-20-GU0"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qh-Fc-ShM">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                        <state key="normal" title="만든이"/>
+                                        <connections>
+                                            <segue destination="DNw-ja-HMo" kind="presentation" id="Ql4-20-GU0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5i-Al-znv">
+                                        <rect key="frame" x="140" y="0.0" width="140" height="30"/>
+                                        <state key="normal" title="닫기"/>
+                                        <connections>
+                                            <action selector="onCloseTouched:" destination="BO5-gw-6HZ" eventType="touchUpInside" id="5Jl-1f-qaa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuj-ro-ayA">
                                 <rect key="frame" x="20" y="234" width="130" height="130"/>
                                 <constraints>
@@ -182,19 +194,19 @@
                             <constraint firstItem="yCf-LY-3sl" firstAttribute="leading" secondItem="Nzu-MP-xFb" secondAttribute="leading" id="1xz-vO-APx"/>
                             <constraint firstItem="xuj-ro-ayA" firstAttribute="trailing" secondItem="UJg-pW-f3G" secondAttribute="trailing" id="5b6-Je-9xv"/>
                             <constraint firstItem="Nzu-MP-xFb" firstAttribute="width" secondItem="UJg-pW-f3G" secondAttribute="width" id="7FZ-ho-SDC"/>
+                            <constraint firstItem="Lgt-e4-idi" firstAttribute="trailing" secondItem="lJ5-rI-cba" secondAttribute="trailing" constant="20" id="Gxp-RH-WCL"/>
                             <constraint firstItem="xuj-ro-ayA" firstAttribute="top" secondItem="UJg-pW-f3G" secondAttribute="bottom" constant="20" id="HiQ-AN-0K0"/>
+                            <constraint firstItem="Lgt-e4-idi" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lJ5-rI-cba" secondAttribute="bottom" constant="30" id="LPx-3v-gpo"/>
                             <constraint firstItem="xuj-ro-ayA" firstAttribute="leading" secondItem="UJg-pW-f3G" secondAttribute="leading" id="QC4-DF-pJS"/>
                             <constraint firstItem="Nzu-MP-xFb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UJg-pW-f3G" secondAttribute="trailing" constant="20" id="ZSa-rp-iQy"/>
-                            <constraint firstItem="7Qh-Fc-ShM" firstAttribute="top" secondItem="xuj-ro-ayA" secondAttribute="bottom" constant="20" id="czX-vg-VRb"/>
                             <constraint firstItem="yCf-LY-3sl" firstAttribute="trailing" secondItem="Nzu-MP-xFb" secondAttribute="trailing" id="fAH-Fa-xvB"/>
                             <constraint firstItem="UJg-pW-f3G" firstAttribute="leading" secondItem="Lgt-e4-idi" secondAttribute="leading" constant="20" id="ff4-ea-qhv"/>
                             <constraint firstItem="Lgt-e4-idi" firstAttribute="trailing" secondItem="Nzu-MP-xFb" secondAttribute="trailing" constant="20" id="guC-Dq-5Kg"/>
-                            <constraint firstItem="7Qh-Fc-ShM" firstAttribute="leading" secondItem="Lgt-e4-idi" secondAttribute="leading" constant="20" id="jhp-5T-vzG"/>
+                            <constraint firstItem="lJ5-rI-cba" firstAttribute="leading" secondItem="Lgt-e4-idi" secondAttribute="leading" constant="20" id="k6X-gO-FId"/>
                             <constraint firstItem="Nzu-MP-xFb" firstAttribute="top" secondItem="UJg-pW-f3G" secondAttribute="top" id="l2p-Ze-6AY"/>
                             <constraint firstItem="UJg-pW-f3G" firstAttribute="top" secondItem="Lgt-e4-idi" secondAttribute="top" constant="20" id="lKX-3R-6JV"/>
                             <constraint firstItem="yCf-LY-3sl" firstAttribute="top" secondItem="Nzu-MP-xFb" secondAttribute="bottom" constant="20" id="pYO-KN-KNJ"/>
-                            <constraint firstItem="Lgt-e4-idi" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7Qh-Fc-ShM" secondAttribute="bottom" constant="30" id="xOG-wD-ymB"/>
-                            <constraint firstItem="Lgt-e4-idi" firstAttribute="trailing" secondItem="7Qh-Fc-ShM" secondAttribute="trailing" constant="20" id="zio-r5-bHh"/>
+                            <constraint firstItem="lJ5-rI-cba" firstAttribute="top" secondItem="xuj-ro-ayA" secondAttribute="bottom" constant="20" id="zVs-B0-o9t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lgt-e4-idi"/>
                     </view>
@@ -202,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lg-1U-eL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610" y="-689"/>
+            <point key="canvasLocation" x="-894" y="-563"/>
         </scene>
         <!--Todos-->
         <scene sceneID="Sfb-0P-jqu">
@@ -318,16 +330,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udO-FL-3Ob">
+                                <rect key="frame" x="20" y="403.5" width="280" height="30"/>
+                                <state key="normal" title="닫기"/>
+                                <connections>
+                                    <action selector="onCloseTouched:" destination="IP2-AL-nbv" eventType="touchUpInside" id="H31-SL-xfr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fZe-6w-2hy" firstAttribute="width" secondItem="qsp-RM-FM7" secondAttribute="width" multiplier="0.6" id="2zn-pQ-35b"/>
                             <constraint firstItem="fZe-6w-2hy" firstAttribute="top" secondItem="mHa-j9-btN" secondAttribute="bottom" constant="8" id="DfD-zW-8oa"/>
+                            <constraint firstItem="gdk-6O-QIA" firstAttribute="trailing" secondItem="udO-FL-3Ob" secondAttribute="trailing" constant="20" id="GbY-RC-eZa"/>
                             <constraint firstItem="mHa-j9-btN" firstAttribute="centerX" secondItem="qsp-RM-FM7" secondAttribute="centerX" id="KW8-0N-BCs"/>
                             <constraint firstItem="NVT-Tr-hwd" firstAttribute="top" secondItem="gdk-6O-QIA" secondAttribute="top" constant="20" id="PsH-aT-4ah"/>
+                            <constraint firstItem="udO-FL-3Ob" firstAttribute="leading" secondItem="gdk-6O-QIA" secondAttribute="leading" constant="20" id="TNQ-CV-p19"/>
                             <constraint firstItem="fZe-6w-2hy" firstAttribute="centerX" secondItem="qsp-RM-FM7" secondAttribute="centerX" id="aDn-FS-ig7"/>
                             <constraint firstItem="NVT-Tr-hwd" firstAttribute="centerX" secondItem="qsp-RM-FM7" secondAttribute="centerX" id="amw-ah-Lti"/>
                             <constraint firstItem="fZe-6w-2hy" firstAttribute="centerY" secondItem="qsp-RM-FM7" secondAttribute="centerY" id="i5T-DQ-AeV"/>
+                            <constraint firstItem="udO-FL-3Ob" firstAttribute="top" secondItem="fZe-6w-2hy" secondAttribute="bottom" constant="20" id="wgX-MN-t8a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gdk-6O-QIA"/>
                     </view>
@@ -338,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RrY-Jt-aBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2224.8000000000002" y="-526.6866566716642"/>
+            <point key="canvasLocation" x="2104" y="-560"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="rQd-js-h0L">
@@ -435,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Yr-os-3Ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3343" y="-591"/>
+            <point key="canvasLocation" x="2974" y="-560"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="oNt-bO-cXT">
@@ -504,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOI-Mp-yZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3958" y="-528"/>
+            <point key="canvasLocation" x="3844" y="-560"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cjm-bP-80l">
@@ -515,7 +537,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="idr-C0-DiL">
-                                <rect key="frame" x="16" y="40" width="288" height="106"/>
+                                <rect key="frame" x="16" y="40" width="288" height="144"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxK-qJ-xVf">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
@@ -534,6 +556,13 @@
                                         <state key="normal" title="로그인"/>
                                         <connections>
                                             <action selector="onLoginTouched:" destination="l6N-6P-k58" eventType="touchUpInside" id="J5m-cc-o3J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-BH-109">
+                                        <rect key="frame" x="0.0" y="114" width="288" height="30"/>
+                                        <state key="normal" title="닫기"/>
+                                        <connections>
+                                            <action selector="onCloseTouched:" destination="l6N-6P-k58" eventType="touchUpInside" id="M5P-M3-BC2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -747,7 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfB-Yu-GiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="106.40394088669952"/>
+            <point key="canvasLocation" x="-304" y="522"/>
         </scene>
         <!--Up And Down View Controller-->
         <scene sceneID="gpp-yv-mQs">
@@ -839,7 +868,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1041" y="106"/>
+            <point key="canvasLocation" x="722" y="522"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BEf-fE-HgD">
@@ -857,7 +886,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrx-7z-MhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="-376"/>
+            <point key="canvasLocation" x="-193" y="-560"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6uN-gr-g3C">
@@ -908,6 +937,6 @@
         <image name="yagom" width="167" height="160.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T0q-Jz-Gpi"/>
+        <segue reference="u4w-iw-Xwy"/>
     </inferredMetricsTieBreakers>
 </document>

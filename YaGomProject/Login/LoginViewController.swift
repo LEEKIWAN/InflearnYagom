@@ -78,4 +78,7 @@ class LoginViewController: UIViewController {
         infoViewController.loginInfo = LoginInfo(email: email, password: password)
         
     }
+    @IBAction func onCloseTouched(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
