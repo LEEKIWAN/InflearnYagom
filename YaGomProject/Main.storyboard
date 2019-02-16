@@ -233,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xCU-7n-cVg">
-                                <rect key="frame" x="13" y="33" width="294" height="390"/>
+                                <rect key="frame" x="13" y="33" width="294" height="450"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2J-fY-iEr">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
@@ -284,6 +284,13 @@
                                             <segue destination="fGM-CV-IxD" kind="presentation" id="oHh-Ih-6SI"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fa-VK-Ea8">
+                                        <rect key="frame" x="0.0" y="420" width="294" height="30"/>
+                                        <state key="normal" title="Friends"/>
+                                        <connections>
+                                            <segue destination="4e5-H9-oZs" kind="show" id="L6c-Xz-8Aq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -299,6 +306,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frv-w7-yjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="-560.86956521739137"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="Dqa-pd-5ii">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Friends" id="4e5-H9-oZs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIB-c9-agg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571" y="-146"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="nJe-uP-D6g">

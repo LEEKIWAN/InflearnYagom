@@ -15,6 +15,15 @@
 		835E46FE21FA002500D1612A /* UpAndDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E46FD21FA002500D1612A /* UpAndDownViewController.swift */; };
 		835E470021FB3FA500D1612A /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E46FF21FB3FA500D1612A /* ColorPickerViewController.swift */; };
 		835E470221FC238700D1612A /* Animals.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835E470121FC238700D1612A /* Animals.xcassets */; };
+		838FFD7E220DB0180027310F /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838FFD7D220DB0180027310F /* Friends.storyboard */; };
+		838FFD80220DB0350027310F /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FFD7F220DB0350027310F /* FriendViewController.swift */; };
+		838FFD82220DB0670027310F /* BestFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FFD81220DB0670027310F /* BestFriendsTableViewController.swift */; };
+		838FFD84220DB0750027310F /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FFD83220DB0750027310F /* FriendsTableViewController.swift */; };
+		838FFD86220DB1E60027310F /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838FFD85220DB1E60027310F /* Friends.xcassets */; };
+		838FFD88220DBB4B0027310F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FFD87220DBB4B0027310F /* Person.swift */; };
+		838FFD8A22102DFC0027310F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FFD8922102DFC0027310F /* Request.swift */; };
+		838FFD8C221031DD0027310F /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FFD8B221031DD0027310F /* FriendTableViewCell.swift */; };
+		838FFD8E2210325F0027310F /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838FFD8D2210325F0027310F /* FriendTableViewCell.xib */; };
 		83A5DE3F21FDCF5300E67781 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DE3E21FDCF5300E67781 /* DescriptionViewController.swift */; };
 		83A5DE4121FDCF6100E67781 /* MakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DE4021FDCF6100E67781 /* MakerViewController.swift */; };
 		83A5DE4321FDD67800E67781 /* AnimalsJsonData.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A5DE4221FDD67800E67781 /* AnimalsJsonData.xcassets */; };
@@ -47,6 +56,15 @@
 		835E46FD21FA002500D1612A /* UpAndDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpAndDownViewController.swift; sourceTree = "<group>"; };
 		835E46FF21FB3FA500D1612A /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		835E470121FC238700D1612A /* Animals.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animals.xcassets; sourceTree = "<group>"; };
+		838FFD7D220DB0180027310F /* Friends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		838FFD7F220DB0350027310F /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		838FFD81220DB0670027310F /* BestFriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsTableViewController.swift; sourceTree = "<group>"; };
+		838FFD83220DB0750027310F /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		838FFD85220DB1E60027310F /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
+		838FFD87220DBB4B0027310F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		838FFD8922102DFC0027310F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		838FFD8B221031DD0027310F /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		838FFD8D2210325F0027310F /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		83A5DE3E21FDCF5300E67781 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		83A5DE4021FDCF6100E67781 /* MakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerViewController.swift; sourceTree = "<group>"; };
 		83A5DE4221FDD67800E67781 /* AnimalsJsonData.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AnimalsJsonData.xcassets; sourceTree = "<group>"; };
@@ -109,12 +127,29 @@
 				83EC8667220D642600B67200 /* ColorPicker */,
 				83DE6FD62207120000B94CC9 /* Todo */,
 				83DE6FCD22032A8700B94CC9 /* DISC */,
+				838FFD7C220DAFF20027310F /* Friends */,
 				83DE6FC52201CEBE00B94CC9 /* DISCTest.xcassets */,
 				833D2DE621F884CC00FD597E /* Assets.xcassets */,
 				835E470121FC238700D1612A /* Animals.xcassets */,
 				83A5DE4221FDD67800E67781 /* AnimalsJsonData.xcassets */,
 			);
 			path = YaGomProject;
+			sourceTree = "<group>";
+		};
+		838FFD7C220DAFF20027310F /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				838FFD7D220DB0180027310F /* Friends.storyboard */,
+				838FFD7F220DB0350027310F /* FriendViewController.swift */,
+				838FFD81220DB0670027310F /* BestFriendsTableViewController.swift */,
+				838FFD83220DB0750027310F /* FriendsTableViewController.swift */,
+				838FFD85220DB1E60027310F /* Friends.xcassets */,
+				838FFD87220DBB4B0027310F /* Person.swift */,
+				838FFD8922102DFC0027310F /* Request.swift */,
+				838FFD8D2210325F0027310F /* FriendTableViewCell.xib */,
+				838FFD8B221031DD0027310F /* FriendTableViewCell.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 		83DE6FCD22032A8700B94CC9 /* DISC */ = {
@@ -262,8 +297,11 @@
 			files = (
 				83A5DE4321FDD67800E67781 /* AnimalsJsonData.xcassets in Resources */,
 				833D2DF421F884E700FD597E /* Main.storyboard in Resources */,
+				838FFD86220DB1E60027310F /* Friends.xcassets in Resources */,
 				83DE6FC62201CEBE00B94CC9 /* DISCTest.xcassets in Resources */,
 				835E470221FC238700D1612A /* Animals.xcassets in Resources */,
+				838FFD8E2210325F0027310F /* FriendTableViewCell.xib in Resources */,
+				838FFD7E220DB0180027310F /* Friends.storyboard in Resources */,
 				83DE6FD82207125D00B94CC9 /* Todos.storyboard in Resources */,
 				833D2DEA21F884CC00FD597E /* LaunchScreen.storyboard in Resources */,
 				833D2DE721F884CC00FD597E /* Assets.xcassets in Resources */,
@@ -280,11 +318,17 @@
 				83DE6FD02206CB4700B94CC9 /* Question.swift in Sources */,
 				83DE6FCA220329C700B94CC9 /* ResultViewController.swift in Sources */,
 				83FCE58F21FF22A700F13E1D /* LoginViewController.swift in Sources */,
+				838FFD84220DB0750027310F /* FriendsTableViewController.swift in Sources */,
+				838FFD82220DB0670027310F /* BestFriendsTableViewController.swift in Sources */,
+				838FFD80220DB0350027310F /* FriendViewController.swift in Sources */,
+				838FFD88220DBB4B0027310F /* Person.swift in Sources */,
+				838FFD8C221031DD0027310F /* FriendTableViewCell.swift in Sources */,
 				83DE6FDC22071CCA00B94CC9 /* TodoViewController.swift in Sources */,
 				83FCE59321FF24F800F13E1D /* InfoViewController.swift in Sources */,
 				83DE6FC8220329C000B94CC9 /* QuestionViewController.swift in Sources */,
 				83DE6FD42206D05800B94CC9 /* UserInfo.swift in Sources */,
 				833D2DF321F884E700FD597E /* WebViewController.swift in Sources */,
+				838FFD8A22102DFC0027310F /* Request.swift in Sources */,
 				83DE6FD22206CCDF00B94CC9 /* Result.swift in Sources */,
 				83A5DE4521FDD6E200E67781 /* AnimalInfo.swift in Sources */,
 				835E46FE21FA002500D1612A /* UpAndDownViewController.swift in Sources */,
@@ -435,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N352ULAZ9C;
+				DEVELOPMENT_TEAM = 77F6X5R2CN;
 				INFOPLIST_FILE = YaGomProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,7 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N352ULAZ9C;
+				DEVELOPMENT_TEAM = 77F6X5R2CN;
 				INFOPLIST_FILE = YaGomProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
